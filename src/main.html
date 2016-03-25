@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <script type="text/javascript" src="calc.js"></script>
+
+    <title>BARF Calculator</title>
+</head>
+<body>
+<form id="calculator_form">
+    <label>weight (in kilograms):</label>
+    <br />
+    <input id="weight" type="text" name="name" />
+    <br />
+    <br />
+
+
+    <label>gender:</label>
+    <br />
+    <select id="gender">
+        <option value="0.005">male</option>
+        <option value="0">female</option>
+        <option value="0.005">pregnant female</option>
+    </select>
+    <br />
+    <br />
+
+    <label>size:</label>
+    <br />
+    <select id="size">
+        <option value="0.02">normal/big</option>
+        <option value="0.065">small</option>
+    </select>
+    <br />
+    <br />
+
+    <label>fertility:</label>
+    <br />
+    <select  id="fertility">
+        <option value="0">fertile</option>
+        <option value="-0.005">spayed/neutered</option>
+    </select>
+    <br />
+    <br />
+
+    <label>age:</label>
+    <br />
+    <select id="age">
+        <option value="0">adult</option>
+        <option value="0.07">puppy</option>
+        <option value="0.005">senior</option>
+    </select>
+    <br />
+    <br />
+
+    <label>activity level:</label>
+    <br />
+    <select id="activity">
+        <option value="0">normal</option>
+        <option value="0.005">active</option>
+    </select>
+    <br />
+    <br />
+
+    <label>fur type:</label>
+    <br />
+    <select id="fur">
+        <option value="0">normal</option>
+        <option value="0.005">short</option>
+    </select>
+    <br />
+    <br />
+
+    <label>goal:</label>
+    <br />
+    <select id="goal">
+        <option value="-0.005">lose weight</option>
+        <option value="0">keep weight</option>
+        <option value="0.005">gain weight</option>
+    </select>
+    <br />
+    <br />
+
+    <button onclick="Calculator.initialize()">Calculate</button>
+
+</form>
+<br />
+<div id="result_container">
+
+</div>
+
+</body>
+</html>
