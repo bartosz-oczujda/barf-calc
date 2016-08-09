@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
 
-    <script type="text/javascript" src="src/calc.js"></script>
 
     <title>BARF Calculator</title>
 </head>
@@ -11,17 +10,24 @@
 <form id="calculator_form">
     <label>weight (in kilograms):</label>
     <br />
-    <input id="weight" type="text" name="name" />
+        <input id="weight" type="text" name="name" />
     <br />
     <br />
-
 
     <label>gender:</label>
     <br />
     <select id="gender">
         <option value="0.005">male</option>
         <option value="0">female</option>
-        <option value="0.005">pregnant female</option>
+    </select>
+    <br />
+    <br />
+
+    <label>is pregnant:</label>
+    <br />
+    <select id="pregnant" disabled="true">
+        <option value="0">no</option>
+        <option value="0.005">yes</option>
     </select>
     <br />
     <br />
@@ -89,6 +95,10 @@
 <div id="result_container">
 
 </div>
-
+<script type="text/javascript" src="src/calc.js"></script>
+<script type="text/javascript" src="src/viewcontroller.js"></script>
+<script>
+    var controller = new controller.ViewController();
+</script>
 </body>
 </html>
