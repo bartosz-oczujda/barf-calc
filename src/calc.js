@@ -7,6 +7,7 @@ var Calculator;
             var result = 0;
             var arr = [
                 input.gender,
+                input.pregnant,
                 input.size,
                 input.fertility,
                 input.age,
@@ -59,6 +60,7 @@ var Calculator;
         function CalculatorInput() {
             this.bodyMass = 0; //initial input parameter
             this.gender = 0; // male: +0.005; female: 0; female+puppies: +0.005;
+            this.pregnant = 0; // female+puppies: +0.005;
             this.size = 0; // normal,big: 0.02; mini (<7kg):0.065;
             this.fertility = 0; // yes: 0; no: -0.005;
             this.age = 0; // adult: 0; puppy (<1.5yo): +0.07; old (+8yo): +0.005;

@@ -7,6 +7,7 @@ module Calculator {
 
             var arr:Array<number> = [
                 input.gender,
+                input.pregnant,
                 input.size,
                 input.fertility,
                 input.age,
@@ -66,6 +67,7 @@ module Calculator {
         public bodyMass:number = 0; //initial input parameter
 
         public gender:number = 0; // male: +0.005; female: 0; female+puppies: +0.005;
+        public pregnant:number = 0; // female+puppies: +0.005;
         public size:number = 0; // normal,big: 0.02; mini (<7kg):0.065;
         public fertility:number = 0; // yes: 0; no: -0.005;
         public age:number = 0; // adult: 0; puppy (<1.5yo): +0.07; old (+8yo): +0.005;
